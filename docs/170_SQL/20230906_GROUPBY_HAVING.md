@@ -5,7 +5,7 @@ parent: SQL
 nav_order: 1
 ---
 
-# SQLD
+# SQL
 
 ## GROUP BY, HAVING 절
 

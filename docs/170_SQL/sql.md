@@ -6,4 +6,4 @@ has_children: true
 permalink: /docs/SQL
 ---
 
-# 알고리즘
+# SQL
