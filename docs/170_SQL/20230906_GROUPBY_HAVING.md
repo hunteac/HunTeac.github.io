@@ -15,19 +15,19 @@ nav_order: 1
 - SELECT 절, HAVING 절, ORDER BY 절에 사용할 수 있다.
 
 ### 집계함수 특징
-- SQL문 - 집계함수명([DISTINCT | ALL] 컬럼 | 표현식)
+- SQL문 - 집계함수명([DISTINCT \| ALL] 컬럼 \| 표현식)
 - 설명 - DISTINCT : 같은 값을 하나의 데이터로 간주하여 하나만 조회
 - ALL : Default 옵션이므로 생략 가능
 
 ### 집계함수 종류
 - COUNT(*) – NULL 값을 포함한 행의 수를 출력
-- COUNT(컬럼|표현식) – 컬럼이나 표현식의 값이 NULL 값인 것을 제외한 행의 수를 출력
-- SUM([DISTINCT | ALL] 컬럼 | 표현식) – 컬럼이나 표현식의 NULL 값을 제외한 합계 출력
-- AVG([DISTINCT | ALL] 컬럼 | 표현식) – 컬럼이나 표현식의 NULL 값을 제외한 평균 출력
-- MAX([DISTINCT | ALL] 컬럼 | 표현식) – 컬럼이나 표현식의 최대값 출력 / 문자, 날짜 데이터 타입도 가능
-- MIN([DISTINCT | ALL] 컬럼 | 표현식) – 컬럼이나 표현식의 최소값 출력 / 문자, 날짜 데이터 타입도 가능
-- STDDEV([DISTINCT | ALL] 컬럼 | 표현식) – 컬럼이나 표현식의 표준편차 출력
-- VARIAN([DISTINCT | ALL] 컬럼 | 표현식) – 컬럼이나 표현식의 분산 출력
+- COUNT(컬럼 \| 표현식) – 컬럼이나 표현식의 값이 NULL 값인 것을 제외한 행의 수를 출력
+- SUM([DISTINCT \| ALL] 컬럼 \| 표현식) – 컬럼이나 표현식의 NULL 값을 제외한 합계 출력
+- AVG([DISTINCT \| ALL] 컬럼 \| 표현식) – 컬럼이나 표현식의 NULL 값을 제외한 평균 출력
+- MAX([DISTINCT \| ALL] 컬럼 \| 표현식) – 컬럼이나 표현식의 최대값 출력 / 문자, 날짜 데이터 타입도 가능
+- MIN([DISTINCT \| ALL] 컬럼 \| 표현식) – 컬럼이나 표현식의 최소값 출력 / 문자, 날짜 데이터 타입도 가능
+- STDDEV([DISTINCT \| ALL] 컬럼 \| 표현식) – 컬럼이나 표현식의 표준편차 출력
+- VARIAN([DISTINCT \| ALL] 컬럼 \| 표현식) – 컬럼이나 표현식의 분산 출력
 기타 통계 함수 – 벤더별로 다양한 통계식 제공 
 
 ### GROUP BY 절
