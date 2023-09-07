@@ -1,7 +1,7 @@
 ---
 layout: default
 title: GROUP BY, HAVING
-parent: SQLD
+parent: SQL
 nav_order: 1
 ---
 
