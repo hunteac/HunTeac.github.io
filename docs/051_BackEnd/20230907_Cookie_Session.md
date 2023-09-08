@@ -2,7 +2,7 @@
 layout: default
 title: Cookie, Session
 parent: BackEnd
-nav_order: 1
+nav_order: 3
 ---
 
 # BackEnd
@@ -46,7 +46,7 @@ nav_order: 1
 ### JSP 기본 객체 영역 (Scope)
 - Page : 하나의 페이지 정보를 담고 있는 영역, **페이지가 바뀌면 새로운 객체가 생성됨** (현재 JSP 페이지)
 - Request : 하나의 요청을 처리할 때 사용되는 영역, **응답이 완료되면 사라진다**. (forwarding 요청 객체를 그대로 가져옴)
-- session : 하나의 웹 브라우저와 관련된 영역, **로그인 정보 등을 저장**한다. (웹 브라우저 종료시 사라짐)
+- session : 하나의 웹 브라우저와 관련된 영역, **로그인 정보 등을 저장**한다. (웹 브라우저를 바꾸면 읽을 수 없음)
 - application : 웹 어플리케이션 영역, 어플리케이션이 시작되면 **종료될때 까지 유지**된다. (서버 종료시 사라짐)
 
 ### HttpSession
@@ -86,17 +86,17 @@ String userid = (String)session.getAttribute("userid");
 ```
 
 ### session 주요 메소드
-메소드 | 설명
---- | ---
-void setAttribute(String name,Object value) | session 에 지정한 name에 해당하는 객체를 추가
-void setMaxInactiveInterval(int interval) | 사용자가 다음 요청을 보낼 때 까지 세션을 유지하는 최대시간(초단위)를 설정
-void invalidate() | 현재 세션을 없애고, 속성도 삭제한다.
-String getId() | 현재 세션의 고유 id를 반환
-long getLastAccessTime() | 현재 세션에 클라이언트가 마지막으로 요청을 보낸 시간을 반환(long)
-Object getAttribute(String name) | name에 해당하는 속성값 반환, 반환형이 Object 임에 유의
-long getCreationTime() | 세션이 만들어진 시간 반환
-void removeAttribute(String name) | 세션에서 지정한 이름의 객체를 제거
-Enumeration getAttributeNames() | 세션에서 모든 객체의 이름을 Enumeration형으로 반환
+| 메소드 | 설명 |
+| --- | --- | 
+| void setAttribute(String name,Object value) | session 에 지정한 name에 해당하는 객체를 추가 |
+| void setMaxInactiveInterval(int interval) | 사용자가 다음 요청을 보낼 때 까지 세션을 유지하는 최대시간(초단위)를 설정 | 
+| void invalidate() | 현재 세션을 없애고, 속성도 삭제한다. |
+| String getId() | 현재 세션의 고유 id를 반환 |
+| long getLastAccessTime() | 현재 세션에 클라이언트가 마지막으로 요청을 보낸 시간을 반환(long) |
+| Object getAttribute(String name) | name에 해당하는 속성값 반환, 반환형이 Object 임에 유의 |
+| long getCreationTime() | 세션이 만들어진 시간 반환 |
+| void removeAttribute(String name) | 세션에서 지정한 이름의 객체를 제거 |
+| Enumeration getAttributeNames() | 세션에서 모든 객체의 이름을 Enumeration형으로 반환 |
 
 
 
