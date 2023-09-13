@@ -81,15 +81,15 @@ public class PersonProxy implements Person {
 ```
 
 ### AOP 용어
-| 용어 | 내용 |
-| --- | --- |
-| Aspect | 여러 클래스에 공통적으로 구현되는 관심사(Concern)의 모듈화 |
-| Join Point | 메서드 실행이나 예외처리와 같은 프로그램 실행중의 특정 지점 <br> Spring에서는 메서드 실행을 의미한다. |
-| PointCut | Join Point에 Aspect를 적용하기 위한 조건 서술 <br> Aspect는 지정한 pointcut 에 일치하는 모든 join point에서 실행된다. |
-| Advice | 특정 조인포인트(Join Point)에서 Aspect에 의해서 취해진 행동 <br> Around, Before, After 등의 Advice 타입이 존재 |
-| Target 객체 | 하나 이상의 advice가 적용될 객체 <br> Spring AOP는 Runtime Proxy를 사용하여 구현되므로 객체는 항상 Proxy 객체가 된다. |
-| AOP Proxy | AOP를 구현하기 위해 AOP 프레임워크에 의해 생성된 객체 <br> Spring Framework에서 AOP 프록시는 JDK dynamic proxy 또는 CGLIB proxy이다. |
-| Weaving | Aspect를 다른 객체와 연결하여 Advice 객체를 생성 <br> 런타임 또는 로딩 시 수행할 수 있지만 Spring AOP는 런타임에 위빙을 수행 |
+| 용어           | 내용                                                    |
+| -------------- | ------------------------------------------------------- |
+| Aspect         | 여러 클래스에 공통적으로 구현되는 관심사(Concern)의 모듈화 |
+| Join Point     | 메서드 실행이나 예외 처리와 같은 프로그램 실행 중의 특정 지점<br>Spring에서는 메서드 실행을 의미한다.  |
+| PointCut       | Join Point에 Aspect를 적용하기 위한 조건 서술<br>Aspect는 지정한 pointcut에 일치하는 모든 join point에서 실행된다. |
+| Advice         | 특정 조인 포인트(Join Point)에서 Aspect에 의해 취해진 행동<br>Around, Before, After 등의 Advice 타입이 존재 |
+| Target 객체    | 하나 이상의 advice가 적용될 객체<br>Spring AOP는 Runtime Proxy를 사용하여 구현되므로 객체는 항상 Proxy 객체가 된다. |
+| AOP Proxy      | AOP를 구현하기 위해 AOP 프레임워크에 의해 생성된 객체<br>Spring Framework에서 AOP 프록시는 JDK dynamic proxy 또는 CGLIB proxy이다. |
+| Weaving        | Aspect를 다른 객체와 연결하여 Advice 객체를 생성<br>런타임 또는 로딩 시 수행할 수 있지만 Spring AOP는 런타임에 위빙을 수행 
 
 ### Spring AOP Proxy
 - 실제 기능이 구현된 target 객체를 호출하면, target이 호출되는 것이 아니라 advice가 적용된 Proxy 객체가 호출된다.
@@ -186,11 +186,11 @@ public void method(ProceedingJoinPoint jp) {
 ```
 
 ### Pointcut Expression 패턴 예시
-| 패턴 | 설명 |
-| --- | --- |
-| execution(public * *(..)) | public 메서드 실행 |
-| execution(* set*(..)) | 메서드 이름이 set으로 시작하는 메서드 실행 |
+| 패턴                                | 설명                                 |
+| ----------------------------------- | ------------------------------------ |
+| execution(public * *(..))          | public 메서드 실행                   |
+| execution(* set*(..))              | 메서드 이름이 set으로 시작하는 메서드 실행 |
 | execution(* com.xyz.service.AccountService.*(..)) | AccountService Interface에 정의된 모든 메서드 |
 | execution(* com.xyz.service.*.*(..)) | service package에 선언된 모든 메서드 |
 | execution(* com.xyz.service..*.*(..)) | service package 또는 그 하위 패키지에 선언된 모든 메서드 실행 |
-| within(com.xyz.service.*) | service package 또는 그 하위 패키지의 모든 join point(Spring AOP에서는 메서드 실행) |
+| within(com.xyz.service.*)          | service package 또는 그 하위 패키지의 모든 join point(Spring AOP에서는 메서드 실행) |
