@@ -86,6 +86,7 @@ String userid = (String)session.getAttribute("userid");
 ```
 
 ### session 주요 메소드
+
 | 메소드 | 설명 |
 | --- | --- | 
 | void setAttribute(String name,Object value) | session 에 지정한 name에 해당하는 객체를 추가 |
