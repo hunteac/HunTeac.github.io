@@ -30,7 +30,7 @@ nav_order: 7
 - DispatcherServlet(FrontController)를 중심으로 디자인 되었으며, View Resolver, Handler Mapping, Controller와 같은 객체와 함께 요청을 처리하도록 구성
 <br>
 
-![Alt text](image.png)
+![Alt text](images/image.png)
 
 ### Spring MVC 구성요소
 - DispatcherServlet -> 클라이언트 요청처리(요청 및 처리 결과 전달)
