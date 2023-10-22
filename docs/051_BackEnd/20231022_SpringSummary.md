@@ -28,7 +28,7 @@ nav_order: 8
     - `@PostConstruct`, `@PreDestroy` 어노테이션을 사용하여 초기화 및 소멸 시 특정 로직을 실행할 수 있다.
 - **등록방식**:
     - **Annotation**: 클래스 위에 `@Component`, `@Service` 등의 어노테이션을 사용
-    - **XML**: `<bean id="..." class="..."/>` 형태로 등록
+    - **XML**: `<bean class="..." id="..."/>` 형태로 등록
     - **Java**: `@Configuration` 어노테이션과 함께 `@Bean`을 사용해 Java 코드 내에서 Bean을 등록
 
 ### DI (의존성 주입)
@@ -50,6 +50,7 @@ nav_order: 8
 
 ### AOP (관점지향 프로그래밍)
 - **Aspect**: 횡단 관심사를 모듈화한 코드 (예: 로깅, 트랜잭션 관리)
+    - 횡단 관심사(Crosscutting Concerns): 애플리케이션 내 여러 핵심 비즈니스 로직들에 걸쳐서 실행되어야 하는 동작들
 - **PointCut**: 어떤 JoinPoint (메소드 실행 지점)에서 Aspect가 동작할지 정의
 - **JoinPoint**: 프로그램 실행 중 Aspect의 코드가 삽입될 수 있는 지점
 - **Target**: Aspect의 코드가 적용되는 객체

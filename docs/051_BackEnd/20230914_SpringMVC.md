@@ -25,10 +25,15 @@ nav_order: 7
 - 사용자에게 데이터를 가져오고 수정하고 제공함
 
 ### Spring Web MVC
+- 다른 프레임워크와 마찬가지로 front controller pattern으로 구성됨
+- 중심이 되는 DispatcherServlet(front controller)은 요청처리를 위한 기능을 제공
+
+![Alt text](images/image5.png)
+
+### Spring Web MVC
 - Servlet API를 기반으로 구축된 웹프레임워크
 - Spring Framework이 제공하는 DI, AOP 뿐 아니라, WEB 개발을 위한 기능을 제공
 - DispatcherServlet(FrontController)를 중심으로 디자인 되었으며, View Resolver, Handler Mapping, Controller와 같은 객체와 함께 요청을 처리하도록 구성
-<br>
 
 ![Alt text](images/image.png)
 
