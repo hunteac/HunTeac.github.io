@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JVM, main, print
+title: JVM, main(), print
 parent: Java
 nav_order: 1
 ---
