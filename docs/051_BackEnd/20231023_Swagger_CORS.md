@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SpringSummary
+title: Swagger, CORS
 parent: BackEnd
 nav_order: 10
 ---
