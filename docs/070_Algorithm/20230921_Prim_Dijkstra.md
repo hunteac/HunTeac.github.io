@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 프림, 다익스트라
-parent: Algorithm Basic
+parent: Algorithm
 nav_order: 16
 ---
 
