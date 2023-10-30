@@ -40,7 +40,7 @@ permalink: /
 
 - 자바
 - 알고리즘 문제 풀이(algorithm) [깃허브](https://github.com/HunTeac/algorithm)
-- 금융권 CS 스터디(SSAFY 8반 금융개발CS) [노션](https://www.notion.so/a6c0516ca3344261bc4a72b9a0b30b2f?v=26f7624d59ba4133a1910cb4939b2206)
+- CS 스터디(SSAFY 8반 개발CS) [노션](https://www.notion.so/a6c0516ca3344261bc4a72b9a0b30b2f?v=26f7624d59ba4133a1910cb4939b2206)
 
 ## 경력사항
 
