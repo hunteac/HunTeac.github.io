@@ -5,7 +5,7 @@ parent: Spring
 nav_order: 10
 ---
 
-# BackEnd
+# Spring
 
 ## Spring 프레임워크
 
